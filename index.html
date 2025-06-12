@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عرض تقديمي عن منهجية Crystal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to left, #f0f4f8, #dbe9f4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .slideshow {
+      position: relative;
+      width: 85%;
+      max-width: 1000px;
+      height: 95vh;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      padding: 40px;
+      box-sizing: border-box;
+      direction: rtl;
+    }
+    .slide {
+      display: none;
+      flex-direction: column;
+      height: 100%;
+      overflow-y: auto;
+    }
+    .slide.active {
+      display: flex;
+    }
+    h1, h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-right: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    .title-slide {
+      text-align: center;
+    }
+    .nav-buttons {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+    .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow">
+    <div class="slide active title-slide">
+      <h1>منهجية Crystal في تطوير البرمجيات</h1>
+      <p>عرض شامل عن إحدى منهجيات Agile الخفيفة والمرنة</p>
+    </div>
+
+    <div class="slide">
+      <h2>مقدمة عن المنهجيات الرشيقة (Agile)</h2>
+      <ul>
+        <li>Agile هي فلسفة تطوير برمجيات تركز على التكرار، التعاون، وسرعة الاستجابة للتغيير.</li>
+        <li>تشمل عدة منهجيات مثل Scrum, XP, Kanban وCrystal.</li>
+        <li>Crystal تتميز بأنها خفيفة وقابلة للتخصيص حسب المشروع.</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>ما هي منهجية Crystal؟</h2>
+      <ul>
+        <li>Crystal ليست عملية واحدة، بل مجموعة منهجيات خفيفة تم تطويرها بواسطة Alistair Cockburn.</li>
+        <li>تُستخدم حسب حجم الفريق، تعقيد المشروع، ودرجة خطورته.</li>
+        <li>تعتبر Crystal منهجية قائمة على الأشخاص والتواصل، وليس على الأدوات والعمليات فقط.</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>لماذا ظهرت Crystal؟</h2>
+      <ul>
+        <li>نتيجة ملاحظة فشل الكثير من المشاريع بسبب تعقيد المنهجيات التقليدية.</li>
+        <li>الحاجة لنهج مرن يتناسب مع خصوصية كل مشروع.</li>
+        <li>لتوفير إطار عمل يسمح بالتعلم والتحسين المستمر داخل الفريق.</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>ألوان منهجية Crystal</h2>
+      <ul>
+        <li><strong>Crystal Clear:</strong> فرق 1-6 أفراد، منخفضة الخطورة</li>
+        <li><strong>Crystal Yellow:</strong> فرق 7-20 فرد، متوسطة الخطورة</li>
+        <li><strong>Crystal Orange:</strong> فرق 21-40، مشاريع أكثر تعقيدًا</li>
+        <li><strong>Crystal Red/Blue:</strong> مشاريع ضخمة، عالية الحساسية</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>المبادئ السبعة لـ Crystal</h2>
+      <ul>
+        <li>التواصل وجهًا لوجه</li>
+        <li>سهولة الوصول للمستخدمين والخبراء</li>
+        <li>إفراج مبكر ومتكرر عن البرامج</li>
+        <li>تحسين ذاتي ومرونة في العمليات</li>
+        <li>اختبار وتكامل مستمر</li>
+        <li>التركيز على الأفراد أكثر من العمليات</li>
+        <li>الاستجابة السريعة للتغيرات</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>مقارنة Crystal مع Scrum</h2>
+      <ul>
+        <li>Scrum تعتمد على أدوار محددة وطقوس ثابتة</li>
+        <li>Crystal أكثر مرونة وتخصيصًا حسب الحاجة</li>
+        <li>Scrum أكثر انتشارًا لكن Crystal أنسب في بعض البيئات الصغيرة</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>متى تستخدم Crystal؟</h2>
+      <ul>
+        <li>عند وجود فريق صغير أو متوسط</li>
+        <li>عندما تكون متطلبات المشروع قابلة للتغير</li>
+        <li>في المشاريع التي تتطلب مرونة وخفة في الإدارة</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>أمثلة تطبيقية</h2>
+      <ul>
+        <li>شركة ناشئة تطور تطبيقًا مبدئيًا (MVP)</li>
+        <li>فريق صغير من 5 أفراد يستخدم Crystal Clear</li>
+        <li>نتيجة: إنتاج سريع، تواصل فعال، وضمان الجودة بالاختبار المستمر</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>الإيجابيات والتحديات</h2>
+      <ul>
+        <li><strong>الإيجابيات:</strong> مرونة عالية، تركيز على التواصل، خفة في التوثيق</li>
+        <li><strong>التحديات:</strong> تحتاج إلى فريق ناضج، صعوبة التوسع في مشاريع ضخمة</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>الخلاصة</h2>
+      <ul>
+        <li>Crystal تقدم طريقة عملية وخفيفة لإدارة المشاريع البرمجية</li>
+        <li>مناسبة للفرق الصغيرة التي تركز على التعاون والنتائج</li>
+        <li>ليست بديلاً لكل المنهجيات، ولكنها خيار قوي في السياق المناسب</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>أسئلة ومناقشة</h2>
+      <p>هل لديكم أي استفسارات حول المنهجية أو حالات الاستخدام؟</p>
+    </div>
+
+    <div class="nav-buttons">
+      <button class="btn" onclick="prevSlide()">السابق</button>
+      <button class="btn" onclick="nextSlide()">التالي</button>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+    }
+
+    function nextSlide() {
+      if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        showSlide(currentSlide);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        showSlide(currentSlide);
+      }
+    }
+  </script>
+</body>
+</html>
